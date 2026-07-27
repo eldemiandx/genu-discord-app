@@ -1,0 +1,20 @@
+services:
+  workspace:
+    image: oven/bun:1-alpine
+    container_name: monorepo-workspace
+    working_dir: /usr/src/app/
+    command: tail -f /dev/null
+    volumes:
+      - .:/usr/src/app/
+      - bun_modules:/usr/src/app/node_modules
+      - bun_cache:/root/.bun/install/cache
+    ports:
+      - "4321:4321" # Astro
+      - "3000:3000" # API
+      - "9000:9000" # Discord APP
+    stdin_open: true
+    tty: true
+
+volumes:
+  bun_modules:
+  bun_cache:

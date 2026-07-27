@@ -1,0 +1,22 @@
+{
+	"name": "APP",
+	"dockerComposeFile": "../docker-compose.yml",
+	"shutdownAction": "stopCompose",
+
+	// Indica a qué contenedor debe conectarse VSCode.
+	"service": "workspace",
+	"workspaceFolder": "/usr/src/app",
+	"remoteUser": "root",
+
+	// Configurar VSCode para el entorno de trabajo.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"astro-build.astro-vscode",
+				"biomejs.biome",
+				"bruno-api-client.bruno",
+				"oven.bun-vscode"
+			]
+		}
+	}
+}
