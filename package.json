@@ -1,0 +1,23 @@
+{
+	"name": "genuvt.com",
+	"private": true,
+	"workspaces": [
+		"api",
+		"backend",
+		"frontend"
+	],
+	"scripts": {
+		"start-api": "bun --filter api dev",
+		"start-back": "bun --filter backend dev",
+		"start-front": "bun --filter frontend dev",
+		"dev": "bun --filter api dev & bun --filter backend dev & bun --filter frontend dev",
+		"install:all": "bun install"
+	},
+	"devDependencies": {
+		"typescript": "7.0.2",
+		"@biomejs/biome": "2.5.5",
+		"@types/bun": "latest"
+	},
+	"module": "index.ts",
+	"type": "module"
+}
