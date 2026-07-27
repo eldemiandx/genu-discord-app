@@ -1,4 +1,4 @@
-# mangaestudio-backend
+# genu-discord-app
 
 ## Herramientas utilizadas:
 
