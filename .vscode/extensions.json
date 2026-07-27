@@ -1,0 +1,21 @@
+{
+	"recommendations": [
+		// Formateador de código.
+		"biomejs.biome",
+
+		// Entorno de ejecución Bun.
+		"oven.bun-vscode",
+
+		// Entorno de trabaja VSCode.
+		"ms-vscode-remote.vscode-remote-extensionpack",
+		"ms-vscode.remote-explorer",
+		"ms-azuretools.vscode-containers",
+
+		// Probar API
+		"bruno-api-client.bruno",
+
+		// Construir HTML
+		"astro-build.astro-vscode"
+	],
+	"unwantedRecommendations": ["ms-azuretools.vscode-docker"]
+}

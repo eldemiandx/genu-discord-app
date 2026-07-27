@@ -1,0 +1,42 @@
+{
+	// Ánalisis y corrección de código.
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "always",
+		"source.organizeImports.biome": "always"
+	},
+	"editor.insertSpaces": false,
+	"editor.tabSize": 2,
+	"editor.detectIndentation": false,
+	// Excluir de la búsqueda (mejora el rendimiento).
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/build": true,
+		"**/dist": true,
+		"**/logs": true,
+		"**/.turbo": true,
+		"**/.astro": true,
+		"package-lock.json": true,
+		"bun.lock": true
+	},
+	// Ignorar del análisis (mejora el rendimiento).
+	"files.watcherExclude": {
+		"**/node_modules/**": true,
+		"**/build/**": true,
+		"**/dist/**": true,
+		"**/logs/**": true,
+		"**/.turbo/**": true,
+		"**/.astro/**": true
+	},
+	// Oculta las carpetas en el Explorador de VSCode.
+	"files.exclude": {
+		"**/node_modules": true,
+		"**/dist": true
+	},
+	// Configuración de JavaScript y TypeScript
+	"js/ts.implicitProjectConfig.checkJs": true,
+	"js/ts.validate.enabled": true,
+	"js/ts.suggestionActions.enabled": true,
+	"js/ts.tsdk.path": "node_modules/typescript/lib"
+}
