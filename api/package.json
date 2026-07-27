@@ -1,0 +1,17 @@
+{
+  "name": "api",
+	"version": "1.0.0",
+  "private": true,
+	"type": "module",
+	"imports": {
+		"#core/*": "./src/core/*",
+		"#controllers/*": "./src/controllers/*",
+		"#routes/*": "./src/routes/*"
+	},
+	"scripts": {
+		"dev": "bun --watch src/index.ts",
+		"start": "bun src/index.ts"
+	},
+	"devDependencies": {},
+	"peerDependencies": {}
+}
